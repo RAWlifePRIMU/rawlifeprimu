@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAW Life PRIMU – Sáhó Barbara</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f2ec;
+      color: #3b3a36;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #6b705c;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    nav button {
+      background-color: #a98467;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #4d4b45;
+    }
+    .highlight {
+      color: #a98467;
+    }
+    footer {
+      background-color: #6b705c;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    a {
+      color: #a98467;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact {
+      background-color: #e0dad1;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+    .lang-section {
+      display: none;
+    }
+    .lang-hu, .lang-en, .lang-de {
+      display: none;
+    }
+  </style>
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+    }
+    window.onload = () => showLang('hu');
+  </script>
+</head>
+<body>
+  <header>
+    <h1>RAW Life PRIMU</h1>
+    <p class="highlight">Sáhó Barbara – A jövő egészséges generációjáért</p>
+  </header>
+
+  <nav>
+    <button onclick="showLang('hu')">Magyar</button>
+    <button onclick="showLang('en')">English</button>
+    <button onclick="showLang('de')">Deutsch</button>
+  </nav>
+
+  <section class="lang-section lang-hu">
+    <h2>Rólam</h2>
+    <p>
+      A nevem <strong>Sáhó Barbara</strong>, a <strong>RAW Life PRIMU</strong> megálmodója és projektvezetője. 
+      Hiszek abban, hogy az egészséges gyermekkor nem kiváltság, hanem alapjog. 
+      A felelősségvállalás erkölcsi alapú útját járom, és célom, hogy 
+      globális szinten emlékeztessem a döntéshozókat: a jövő generációja megérdemli a figyelmet, a gondoskodást és a támogatást.
+    </p>
+  </section>
+
+  <section class="lang-section lang-en">
+    <h2>About Me</h2>
+    <p>
+      My name is <strong>Barbara Sáhó</strong>, the creator and project leader of <strong>RAW Life PRIMU</strong>. 
+      I believe that a healthy childhood is not a privilege but a fundamental right. 
+      I walk the path of moral responsibility and aim to remind global decision-makers 
+      that the next generation deserves attention, care, and support.
+    </p>
+  </section>
+
+  <section class="lang-section lang-de">
+    <h2>Über mich</h2>
+    <p>
+      Mein Name ist <strong>Barbara Sáhó</strong>, die Schöpferin und Projektleiterin von <strong>RAW Life PRIMU</strong>. 
+      Ich glaube, dass eine gesunde Kindheit kein Privileg, sondern ein Grundrecht ist. 
+      Ich folge dem Weg der moralischen Verantwortung und möchte Entscheidungsträger weltweit daran erinnern, 
+      dass die nächste Generation Aufmerksamkeit, Fürsorge und Unterstützung verdient.
+    </p>
+  </section>
+
+  <section class="lang-section lang-hu">
+    <h2>Vízió</h2>
+    <p>
+      A <strong>RAW Life PRIMU</strong> nem csupán egy projekt – ez egy mozgalom, amely a fejlődést szolgáló, 
+      <span class="highlight">gyermekbarát, fejlesztő és egészségközpontú</span> megoldásokat kínál. 
+      Egy olyan világot képzelek el, ahol minden gyermek talpra állhat – biztonságban, egészségesen, 
+      felelős felnőttek támogatásával.
+    </p>
+  </section>
+
+  <section class="lang-section lang-en">
+    <h2>Vision</h2>
+    <p>
+      <strong>RAW Life PRIMU</strong> is more than just a project – it’s a movement providing development-oriented, 
+      <span class="highlight">child-friendly, health-centered</span> solutions. 
+      I envision a world where every child can stand tall – safe, healthy, and supported by responsible adults.
+    </p>
+  </section>
+
+  <section class="lang-section lang-de">
+    <h2>Vision</h2>
+    <p>
+      <strong>RAW Life PRIMU</strong> ist mehr als nur ein Projekt – es ist eine Bewegung, die entwicklungsfördernde, 
+      <span class="highlight">kinderfreundliche und gesundheitsorientierte</span> Lösungen bietet. 
+      Ich stelle mir eine Welt vor, in der jedes Kind aufrecht stehen kann – sicher, gesund und unterstützt von verantwortungsvollen Erwachsenen.
+    </p>
+  </section>
+
+  <section class="contact">
+    <h2>Kapcsolat | Contact | Kontakt</h2>
+    <p>
+      E-mail: <a href="mailto:rawlifelrimu@gmail.com">rawlifelrimu@gmail.com</a><br>
+      Projekt / Project / Projekt: RAW Life PRIMU<br>
+      Székhely / Headquarters / Sitz: Győr, Magyarország
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sáhó Barbara | RAW Life PRIMU – Felelősséggel a jövőért</p>
+  </footer>
+</body>
+</html>
